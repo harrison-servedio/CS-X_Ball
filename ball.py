@@ -11,7 +11,7 @@ class ball:
         
         self.color = color
         
-    def stepToCenter(self, minVelo = 5, maxVelo = 100):
+    def step(self, minVelo = 5, maxVelo = 100):
         size = r.randint(0, 180)
         angleToCenter = math.atan2(-self.Ys[-1], -self.Xs[-1])
         angleToCenter = angleToCenter*180/math.pi + 360 if angleToCenter < 0 else angleToCenter*180/math.pi
