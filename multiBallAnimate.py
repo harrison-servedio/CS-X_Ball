@@ -22,6 +22,6 @@ def animate(i):
 
 fig, ax = plt.subplots()
 
-ani = FuncAnimation(plt.gcf(), animate, interval=0)
+ani = FuncAnimation(plt.gcf(), animate, interval=500)
 
 plt.show()
