@@ -1,16 +1,18 @@
-from ball import ball
+from ballClass import ball
 
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 trail = False
 
+# Creates an array of ball objects
 ballArray = [ball("blue"), ball("red"), ball("green")]
 
 
 def animate(i):
     plt.cla()
 
+    # Iterates through each ball object and graphs each object individually
     for b in ballArray:
         b.step()
         if trail:

@@ -1,4 +1,4 @@
-from ball import ball
+from ballClass import ball
 
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
