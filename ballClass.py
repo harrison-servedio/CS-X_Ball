@@ -1,3 +1,14 @@
+"""
+Objects are variables that contain data and functions that can be used to manipulate the data
+
+Functions contained in an object are called methods
+
+Variable Stored in an object are called attributes
+
+
+"""
+
+
 import random as r
 import math
 
