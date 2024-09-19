@@ -1,4 +1,6 @@
 """
+Python Classes Introduction
+
 Objects are variables that contain data and functions that can be used to manipulate the data
 
 Functions contained in an object are called methods
@@ -16,7 +18,7 @@ import math
 class ball:
     # init function runs with class is created
     # self argument is always needed and automatically passed 
-    def __init__(self, color, startX = 2, startY = 2) -> None:
+    def __init__(self, color, startX = 2, startY = 2):
         
         # Defines the class attributes Xs and Ys
         # An attribute is a variable specific to a class
@@ -30,7 +32,10 @@ class ball:
     def setColor(self, color):
         self.color = color
 
-    # Function to take a random step and generate new data for the Xs list and the Ys list
+    def getColor(self):
+        return self.color
+
+
     def step(self, minVelo = 5, maxVelo = 100):
         size = r.randint(0, 180)
         angleToCenter = math.atan2(-self.Ys[-1], -self.Xs[-1])
