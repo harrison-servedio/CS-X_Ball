@@ -3,7 +3,7 @@ from ballClass import ball
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-trail = True
+trail = False
 
 oliverJohn = ball("green")
 
