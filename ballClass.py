@@ -9,8 +9,6 @@ Variable Stored in an object are called attributes
 
 
 """
-
-
 import random as r
 import math
 
@@ -28,14 +26,16 @@ class ball:
         # Defines the class attribute for the color
         self.color = color
     
-    # Redundant function that can be used to modify the class attribute "color"
+    # Unnecessary function that can be used to modify the class attribute "color"
     def setColor(self, color):
         self.color = color
 
+    # Unnecessary function that can be used to get the class attribute "color"
     def getColor(self):
         return self.color
 
-
+    # Generates a random step in the movement of the ball
+    # The step has a higher chances of going to the center so the ball does not leave the frame of the animation or graph
     def step(self, minVelo = 5, maxVelo = 100):
         size = r.randint(0, 180)
         angleToCenter = math.atan2(-self.Ys[-1], -self.Xs[-1])

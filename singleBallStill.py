@@ -22,8 +22,10 @@ fig, ax = plt.subplots()
 
 # Plots the line
 plt.plot(oliverJohn.Xs, oliverJohn.Ys, color=oliverJohn.color)
+
 # Plots a dot at the end
 plt.plot(oliverJohn.Xs[-1], oliverJohn.Ys[-1], marker="o", markersize=8, markeredgecolor=oliverJohn.color, markerfacecolor=oliverJohn.color)
+
 # Formats the graph
 # Use matplotlib documentation for other graph formatting options
 plt.axis('equal')

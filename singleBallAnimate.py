@@ -3,9 +3,11 @@ from ballClass import ball
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
+
 trail = False
 
 oliverJohn = ball("green")
+
 
 # Animations function
 # Runs every time the screen needs to be updated
@@ -22,7 +24,9 @@ def animate(i):
     plt.axis('equal')
     plt.axis([-300, 300, -300, 300])
 
+
 fig, ax = plt.subplots()
+
 
 # sets up the animation object
 # plt.gcf() uses the current figure
